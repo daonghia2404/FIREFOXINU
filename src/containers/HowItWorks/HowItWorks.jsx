@@ -22,9 +22,9 @@ const HowItWorks = () => {
         </div>
 
         <div className="HowItWorks-body">
-          <Row gutter={[48, 48]}>
+          <Row gutter={[48, 48]} justify="center">
             {dataHowItWorks.map((item, index) => (
-              <Col key={item.key} span={4}>
+              <Col key={item.key} span={12} md={{ span: 6 }} lg={{ span: 4 }}>
                 <AnimationOnScroll animateIn="animate__fadeInUp" delay={100 * index}>
                   <div className="HowItWorks-card">
                     <div className="HowItWorks-card-image">

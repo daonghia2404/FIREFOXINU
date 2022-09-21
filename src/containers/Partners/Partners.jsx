@@ -17,7 +17,7 @@ const Partners = () => {
           <div className="Partners-images flex flex-wrap items-center justify-center">
             {dataPartners.map((item, index) => (
               <AnimationOnScroll animateIn="animate__fadeInUp" delay={100 * index}>
-                <div className="Partners-thumbnail">
+                <div className="Partners-images-item">
                   <img src={item} alt="" />
                 </div>
               </AnimationOnScroll>

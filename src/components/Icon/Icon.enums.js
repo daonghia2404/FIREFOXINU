@@ -1,6 +1,7 @@
 export const EIconName = {
   AngleLeft: 'AngleLeft',
   AngleRight: 'AngleRight',
+  Menu: 'Menu',
 };
 
 export const EIconColor = {

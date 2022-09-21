@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Redirect, Router } from '@reach/router';
 import { ParallaxProvider } from 'react-scroll-parallax';
 
@@ -11,10 +11,12 @@ import Navigation from '@/containers/Navigation';
 import './App.scss';
 
 const App = () => {
+  const [visibleMenu, setVisibleMenu] = useState(false);
+
   return (
     <>
-      <Header />
-      <Navigation />
+      <Header onClickMenu={() => setVisibleMenu(true)} />
+      <Navigation visible={visibleMenu} onClickOverlay={() => setVisibleMenu(false)} />
       <div className="App">
         <ParallaxProvider>
           <Router primary={false}>

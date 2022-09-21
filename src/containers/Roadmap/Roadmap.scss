@@ -49,7 +49,7 @@
 
   &-line {
     position: absolute;
-    width: 7px;
+    width: .7rem;
     height: 100%;
     background: $white;
     left: 50%;
@@ -66,6 +66,10 @@
       padding: 0 1.6rem;
       width: fit-content;
       white-space: nowrap;
+
+      @media (max-width: 768px) {
+        font-size: 3.2rem;
+      }
 
       &-line {
         position: absolute;
@@ -90,6 +94,10 @@
           width: calc(7.5rem * 3 / 2);
           height: 2px;
           content: '';
+
+          @media (max-width: 768px) {
+            width: calc(3rem * 3 / 2);
+          }
         }
       }
 
@@ -106,6 +114,10 @@
       &-item {
         font-size: 2.8rem;
         color: $white;
+
+        @media (max-width: 768px) {
+          font-size: 2.2rem;
+        }
       }
     }
   }
@@ -113,8 +125,16 @@
   &-timeline {
     margin: 0 -7.5rem;
 
+    @media (max-width: 768px) {
+      margin: 0 -3rem;
+    }
+
     .ant-col {
       padding: 0 7.5rem;
+
+      @media (max-width: 768px) {
+        padding: 0 3rem;
+      }
     }
 
     .ant-row {
@@ -132,6 +152,10 @@
               right: -7.5rem;
               top: 0;
               transform: translateX(50%);
+
+              @media (max-width: 768px) {
+                right: -3rem;
+              }
             }
 
             &-line {
@@ -163,6 +187,10 @@
               left: -7.5rem;
               top: 0;
               transform: translateX(-50%);
+
+              @media (max-width: 768px) {
+                left: -3rem;
+              }
             }
 
             &-line {

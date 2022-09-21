@@ -24,7 +24,7 @@ const EcoSystem = () => {
           <div className="EcoSystem-body">
             <Row gutter={[48, 48]}>
               {dataEcoSystem.map((item, index) => (
-                <Col key={item.key} span={6}>
+                <Col key={item.key} span={24} md={{ span: 12 }} lg={{ span: 6 }}>
                   <AnimationOnScroll animateIn="animate__fadeInUp" delay={100 * index}>
                     <div className="EcoSystem-card">
                       <div className="EcoSystem-card-image">

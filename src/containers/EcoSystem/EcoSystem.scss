@@ -54,6 +54,12 @@
 
       img {
         transition: $common-transition;
+
+        @media (max-width: 991px) {
+          width: 100%;
+          height: 100%;
+        }
+
       }
     }
 
@@ -69,11 +75,16 @@
         font-size: 3.8rem;
         color: $white;
         margin-bottom: 0.4rem;
+        line-height: 1;
       }
 
       &-description {
         font-size: 1.6rem;
         color: $white;
+
+        @media (max-width: 575px) {
+          font-size: 14px;
+        }
       }
     }
   }

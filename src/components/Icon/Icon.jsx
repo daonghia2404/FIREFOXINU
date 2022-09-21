@@ -6,6 +6,7 @@ import './Icon.scss';
 
 import AngleLeft from './AngleLeft';
 import AngleRight from './AngleRight';
+import Menu from './Menu';
 
 const Icon = ({ name, className, color, onClick }) => {
   const renderIcon = () => {
@@ -14,6 +15,8 @@ const Icon = ({ name, className, color, onClick }) => {
         return <AngleLeft color={color} />;
       case EIconName.AngleRight:
         return <AngleRight color={color} />;
+      case EIconName.Menu:
+        return <Menu color={color} />;
 
       default:
         return <></>;

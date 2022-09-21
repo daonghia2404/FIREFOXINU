@@ -20,6 +20,11 @@
     z-index: 2;
     height: 87rem;
 
+    @media (max-width: 991px) {
+      padding: 6.4rem 0;
+      height: unset;
+    }
+
     &-item {
       &:first-child {
         position: relative;
@@ -32,6 +37,17 @@
         position: absolute;
         right: 0;
         transform: translate(10%, 0%);
+
+        @media (max-width: 991px) {
+          position: unset;
+          transform: none;
+        }
+      }
+
+
+      @media (max-width: 991px) {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
       }
     }
   }
@@ -40,9 +56,13 @@
   &-title {
     font-size: 9.6rem;
     color: $white;
-    line-height: 0.5;
+    line-height: 1;
     text-transform: uppercase;
     margin-bottom: 3.2rem;
+
+    span {
+      line-height: 1;
+    }
 
     span {
       color: $torch-red;
@@ -57,6 +77,12 @@
 
   &-btns {
     column-gap: 3rem;
+
+    @media (max-width: 575px) {
+      flex-direction: column;
+      row-gap: 3rem;
+      align-items: center;
+    }
   }
 
   &-btn {
@@ -91,8 +117,16 @@
     max-width: 71.5rem;
     width: 100%;
 
+    @media (max-width: 991px) {
+      margin: 0 auto;
+    }
+
     &-ball {
       max-width: 13.5rem;
+
+      @media (max-width: 991px) {
+        margin-left: 25%;
+      }
 
       img {
         width: 100%;

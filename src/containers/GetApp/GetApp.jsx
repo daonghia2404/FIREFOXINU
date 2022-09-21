@@ -28,7 +28,7 @@ const GetApp = () => {
         <img src={BgGetApp} alt="" />
       </div>
       <div className="container">
-        <div className="GetApp-wrapper flex items-center justify-between">
+        <div className="GetApp-wrapper flex items-center justify-between flex-wrap">
           <div className="GetApp-wrapper-item">
             <AnimationOnScroll animateIn="animate__slideInLeft">
               <div className="GetApp-title bebas-neue-font">

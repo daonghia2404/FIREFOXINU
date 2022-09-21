@@ -23,6 +23,12 @@
     color: $mine-shaft;
   }
 
+  &-body {
+    .ant-row {
+      align-items: baseline;
+    }
+  }
+
   &-card {
     position: relative;
 
@@ -42,6 +48,10 @@
       &-description {
         font-size: 1.4rem;
         color: $dodger-blue;
+
+        @media (max-width: 575px) {
+          font-size: 14px;
+        }
       }
     }
   }

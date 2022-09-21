@@ -37,7 +37,7 @@ const Teams = () => {
             <div className="Teams-body-wrapper">
               <Row gutter={[40, 40]}>
                 {dataTeams.map((item, index) => (
-                  <Col span={6}>
+                  <Col span={12} sm={{ span: 8 }} md={{ span: 6 }}>
                     <AnimationOnScroll animateIn="animate__fadeInUp" delay={100 * index}>
                       <div key={item.key} className="Teams-item">
                         <div className="Teams-item-avatar">

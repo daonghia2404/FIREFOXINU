@@ -29,7 +29,7 @@ const Welcome = () => {
         <img src={BgWelcome} alt="" />
       </div>
       <div className="container">
-        <div className="Welcome-wrapper flex items-center justify-between">
+        <div className="Welcome-wrapper flex items-center justify-between flex-wrap">
           <div className="Welcome-wrapper-item">
             <AnimationOnScroll animateIn="animate__slideInLeft">
               <div className="Welcome-title bebas-neue-font">
