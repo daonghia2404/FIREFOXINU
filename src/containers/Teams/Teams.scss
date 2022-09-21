@@ -1,0 +1,64 @@
+@import '../../assets/styles/global';
+
+.Teams {
+  padding: 8rem 0;
+  position: relative;
+  overflow: hidden;
+
+  &-bg {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  &-header {
+    margin-bottom: 4rem;
+  }
+
+  &-title {
+    text-align: center;
+    text-transform: uppercase;
+    color: $dodger-blue;
+    font-size: 6.4rem;
+  }
+
+  &-description {
+    text-align: center;
+    font-size: 2.8rem;
+    max-width: 83.4rem;
+    margin: 0 auto;
+    color: $dodger-blue;
+  }
+
+  &-body {
+    position: relative;
+    padding: 4rem 0;
+    background: $chambray;
+  }
+
+  &-item {
+    text-align: center;
+
+    &-avatar {
+      width: 23rem;
+      height: 23rem;
+      overflow: hidden;
+      border-radius: 50%;
+      @include centerScaleImage;
+      margin: 0 auto 0.4rem;
+    }
+
+    &-name {
+      font-size: 2.8rem;
+      color: $white;
+      margin-bottom: 0.4rem;
+    }
+
+    &-job {
+      font-size: 4.2rem;
+      color: $aqua;
+    }
+  }
+}

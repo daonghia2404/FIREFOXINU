@@ -1,0 +1,204 @@
+@import '../../assets/styles/global';
+
+.GamePlay {
+  overflow: hidden;
+  margin-bottom: 16rem;
+
+  &-title {
+    font-weight: 800;
+    color: $white;
+    font-size: 4.8rem;
+    margin-bottom: 1.6rem;
+    padding-left: 3.2rem;
+
+    @media (max-width: 991px) {
+      padding-left: 0;
+      padding-bottom: 6rem;
+    }
+  }
+
+  &-wrapper {
+    &-item {
+      flex: 0 0 50%;
+      max-width: 50%;
+
+      @media (max-width: 991px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+  }
+
+  &-carousel {
+    position: relative;
+    margin: -1.6rem;
+
+    &-item {
+      padding: 1.6rem;
+
+      &-card {
+        &-subtitle {
+          font-size: 2.4rem;
+          font-weight: 800;
+          color: rgba($white, 0.5);
+        }
+
+        &-title {
+          color: $white;
+          font-weight: 800;
+          font-size: 4.8rem;
+          margin-bottom: 3.5rem;
+        }
+
+        &-description {
+          font-size: 1.4rem;
+          font-weight: 600;
+          color: rgba($white, 0.5)
+        }
+      }
+    }
+
+    .Carousels {
+      &-arrow {
+        position: absolute;
+        top: calc(100% + 2.4rem);
+        left: unset;
+        right: unset;
+
+        &.prev {
+          left: 1.6rem;
+        }
+
+        &.next {
+          left: calc(1.6rem + 1.6rem + 3.2rem);
+        }
+      }
+    }
+  }
+
+  &-image {
+    position: relative;
+
+    @media (max-width: 991px) {
+      max-width: 40rem;
+      margin: 6rem auto 0;
+    }
+
+    &-background {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      mix-blend-mode: screen;
+      z-index: 1;
+      width: 100%;
+      max-width: 52rem;
+      animation: bg 5s ease-out infinite;
+
+      @keyframes bg {
+
+        0%,
+        100% {
+          transform: translate(-50%, -50%) scale(1);
+        }
+
+        25% {
+          transform: translate(-50%, -50%) scale(1.1);
+        }
+
+        75% {
+          transform: translate(-50%, -50%) scale(0.9);
+        }
+      }
+    }
+
+    &-gem-1,
+    &-gem-2,
+    &-gem-3 {
+      position: absolute;
+      z-index: 3;
+    }
+
+    &-gem-1 {
+      width: 6.5rem;
+      left: 0;
+      top: 4rem;
+      animation: gem1 3s linear infinite;
+
+      @keyframes gem1 {
+
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+
+        25% {
+          transform: translateY(-2rem);
+        }
+
+        75% {
+          transform: translateY(1rem);
+        }
+      }
+    }
+
+    &-gem-2 {
+      width: 8.8rem;
+      right: 4rem;
+      bottom: 0rem;
+      animation: gem2 4s linear infinite;
+
+      @keyframes gem2 {
+
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+
+        25% {
+          transform: translateY(1rem);
+        }
+
+        75% {
+          transform: translateY(-2rem);
+        }
+      }
+    }
+
+    &-gem-3 {
+      width: 12.3rem;
+      top: 1rem;
+      right: -4rem;
+
+      animation: gem3 5s linear infinite;
+
+      @keyframes gem3 {
+
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+
+        25% {
+          transform: translateY(3rem);
+        }
+
+        75% {
+          transform: translateY(-1rem);
+        }
+      }
+    }
+
+    .animate__animated {
+      position: relative;
+      z-index: 2;
+    }
+
+    &-person {
+      width: 100%;
+      max-width: 33rem;
+      margin: auto;
+      display: block;
+    }
+  }
+}

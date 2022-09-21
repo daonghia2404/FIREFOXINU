@@ -1,0 +1,80 @@
+@import '../../assets/styles/global';
+
+.EcoSystem {
+  padding: 8rem 0;
+
+  &-header {
+    margin-bottom: 12rem;
+  }
+
+  &-title {
+    text-align: center;
+    text-transform: uppercase;
+    color: $mine-shaft;
+    font-size: 6.4rem;
+  }
+
+  &-description {
+    text-align: center;
+    font-size: 2.8rem;
+    max-width: 83.4rem;
+    margin: 0 auto;
+    color: $mine-shaft;
+  }
+
+  &-card {
+    position: relative;
+    border-radius: 2rem;
+    overflow: hidden;
+    cursor: pointer;
+    transition: $common-transition;
+
+    &:hover {
+      transform: translateY(-1rem);
+
+      .EcoSystem-card {
+        &-image {
+          img {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+
+    &::before {
+      @include fullAbsolute;
+      content: '';
+      z-index: 1;
+      background: linear-gradient(180deg, rgba(142, 11, 26, 0) 4.17%, #56040E 100%);
+    }
+
+    &-image {
+      @include centerScaleImage;
+      overflow: hidden;
+
+      img {
+        transition: $common-transition;
+      }
+    }
+
+    &-info {
+      position: absolute;
+      z-index: 2;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 1.5rem 2rem;
+
+      &-title {
+        font-size: 3.8rem;
+        color: $white;
+        margin-bottom: 0.4rem;
+      }
+
+      &-description {
+        font-size: 1.6rem;
+        color: $white;
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+@import '../../assets/styles/global';
+
+.Tokenomics {
+  position: relative;
+  overflow: hidden;
+  padding: 2.4rem 0 0;
+
+  &-bg {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  &-header {
+    margin-bottom: 6.4rem;
+  }
+
+  &-title {
+    text-align: center;
+    text-transform: uppercase;
+    color: $dodger-blue;
+    font-size: 6.4rem;
+  }
+
+  &-description {
+    text-align: center;
+    font-size: 2.8rem;
+    max-width: 83.4rem;
+    margin: 0 auto;
+    color: $dodger-blue;
+  }
+
+  &-chart {
+    max-width: 104.8rem;
+    margin: 0 auto;
+    @include centerScaleImage;
+
+    img {
+      transform: translateX(10%);
+    }
+  }
+}

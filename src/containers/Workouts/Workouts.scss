@@ -1,0 +1,175 @@
+@import '../../assets/styles/global';
+
+.Workouts {
+  overflow: hidden;
+
+  @media (max-width: 991px) {
+    padding-top: 12rem !important;
+  }
+
+  &-background {
+    @include styleBackground;
+
+    &-wrapper {
+      width: 70rem;
+      height: 70rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+  }
+
+  &-wrapper {
+    position: relative;
+
+    &-item {
+      &:first-child {
+        flex: 1;
+      }
+
+      &:last-child {
+        flex: 0 0 30rem;
+        max-width: 30rem;
+
+        @media (max-width: 991px) {
+          position: absolute;
+          right: 0;
+          z-index: -1;
+          transform: translateY(-30%);
+        }
+      }
+    }
+  }
+
+  &-info {
+    margin-bottom: 5rem;
+
+    @media (max-width: 991px) {
+      display: none !important;
+    }
+
+    &-item {
+      padding-right: 2rem;
+      margin: 0 2rem 2rem 0;
+
+      &.border {
+        border-right: 1px solid rgba($white, 0.5);
+      }
+
+      &-subtitle {
+        font-size: 1.4rem;
+        color: rgba($white, 0.5);
+        margin-bottom: .5rem;
+      }
+
+      .Icon {
+        width: 2.4rem;
+      }
+
+      &-title {
+        font-size: 2.4rem;
+        color: $white;
+        font-weight: 800;
+
+        .Icon {
+          margin-left: .8rem;
+          margin: 0 0 .6rem .8rem;
+          cursor: pointer;
+        }
+      }
+
+      &-logo {
+        width: 7.2rem;
+        height: 7.2rem;
+        background: $black;
+        border-radius: 50%;
+        display: flex;
+        margin-right: -1.6rem;
+
+        img {
+          margin: auto;
+          width: 4.5rem;
+        }
+      }
+
+      &-tokens {
+        .Icon {
+          &:not(:last-child) {
+            margin-right: .8rem;
+          }
+        }
+      }
+    }
+  }
+
+  &-title {
+    font-size: 9.6rem;
+    font-weight: 1000;
+    color: $white;
+    margin-bottom: 5rem;
+    line-height: 1.1;
+
+    @media (max-width: 991px) {
+      font-size: 7.6rem;
+    }
+  }
+
+  &-btn {
+    box-shadow: 0px 0px 16px rgba($black, 0.16);
+    background: linear-gradient(279.09deg, #6631E3 0%, #19A8FE 100%);
+    border-radius: .8rem;
+    font-size: 1.4rem;
+    color: $white;
+    line-height: 1;
+    padding: 2.5rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    @media (max-width: 991px) {
+      width: 100%;
+    }
+
+    .Icon {
+      margin-left: .4rem;
+    }
+  }
+
+  &-image {
+    position: relative;
+
+    &-person {
+      position: relative;
+      z-index: 2;
+      display: block;
+      margin: auto;
+      width: 100%;
+      width: 50rem;
+      animation: person 3s infinite;
+
+      @media (max-width: 991px) {
+        width: 30rem;
+      }
+
+      @keyframes person {
+
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+
+        25% {
+          transform: translateY(1rem);
+        }
+
+        75% {
+          transform: translateY(-1rem);
+        }
+      }
+
+    }
+  }
+}

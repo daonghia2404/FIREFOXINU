@@ -1,0 +1,36 @@
+@import '../../assets/styles/global';
+
+.ProjectBackers {
+  &-title {
+    font-weight: 800;
+    color: $white;
+    text-align: center;
+    font-size: 4.8rem;
+    margin-bottom: 5rem;
+
+    @media (max-width: 575px) {
+      font-size: 3.6rem;
+      margin-bottom: 3rem;
+    }
+  }
+
+  &-main {
+    margin: 0 -0.8rem;
+
+    &-item {
+      flex: 0 0 calc(100% / 5);
+      max-width: calc(100% / 5);
+      padding: 1.6rem 0.8rem;
+      margin: auto;
+
+      @media (max-width: 768px) {
+        flex: 0 0 calc(100% / 3);
+        max-width: calc(100% / 3);
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

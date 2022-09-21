@@ -1,0 +1,52 @@
+@import '../../assets/styles/global';
+
+.Header {
+  background: $white;
+
+  &-wrapper {
+    height: 5.2rem;
+  }
+
+  &-logo {
+    font-size: 2.5rem;
+    color: $maroon-flush;
+
+    img {
+      width: 3.6rem;
+      height: 3.6rem;
+      margin-right: 5px;
+    }
+  }
+
+  &-flags {
+    width: 30rem;
+
+    .slick-slide {
+      &>div {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    &-item {
+      width: 3.6rem;
+      height: 3.6rem;
+      border-radius: 50%;
+      overflow: hidden;
+      cursor: pointer;
+      @include centerScaleImage;
+
+      img {
+        border: 1px solid $white;
+        transition: $common-transition;
+        border-radius: 50%;
+      }
+
+      &:hover {
+        img {
+          border-color: $torch-red;
+        }
+      }
+    }
+  }
+}
