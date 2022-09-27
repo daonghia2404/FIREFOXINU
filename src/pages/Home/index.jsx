@@ -10,12 +10,14 @@ import GetApp from '@/containers/GetApp';
 import Footer from '@/containers/Footer';
 import Roadmap from '@/containers/Roadmap';
 import Welcome from '@/containers/Welcome';
+import FirefoxSportBacker from '@/containers/FirefoxSportBacker';
 
 const Home = () => {
   return (
     <div className="Home">
       <Welcome />
       <WatchVideo />
+      <FirefoxSportBacker />
       <Partners />
       <EcoSystem />
       <HowItWorks />

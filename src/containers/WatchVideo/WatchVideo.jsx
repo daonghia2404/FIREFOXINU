@@ -8,7 +8,7 @@ import './WatchVideo.scss';
 
 const WatchVideo = () => {
   return (
-    <div className="WatchVideo">
+    <section className="WatchVideo" id="watchVideo">
       <div className="WatchVideo-wrapper">
         <div className="WatchVideo-thumbnail">
           <img src={ImageWatchVideo} alt="" />
@@ -24,7 +24,7 @@ const WatchVideo = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

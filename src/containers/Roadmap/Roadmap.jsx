@@ -9,7 +9,7 @@ import './Roadmap.scss';
 
 const Roadmap = () => {
   return (
-    <div className="Roadmap">
+    <section className="Roadmap" id="roadmap">
       <div className="container">
         <div className="Roadmap-bg">
           <img src={BgRoadMap} alt="" />
@@ -20,9 +20,7 @@ const Roadmap = () => {
               <div className="Roadmap-title bebas-neue-font">Road Map</div>
             </AnimationOnScroll>
             <AnimationOnScroll animateIn="animate__slideInDown">
-              <div className="Roadmap-description bebas-neue-font">
-                This timeline details our funding and development goals
-              </div>
+              <div className="Roadmap-description">This timeline details our funding and development goals</div>
             </AnimationOnScroll>
           </div>
 
@@ -31,9 +29,13 @@ const Roadmap = () => {
 
             <div className="Roadmap-timeline">
               {dataRoadMap.map((item, index) => (
-                <Row gutter={[0, 24]}>
+                <Row gutter={[0, 64]}>
+                  <Col span={12} />
+
                   <Col key={index} span={12}>
-                    <AnimationOnScroll animateIn={index % 2 !== 0 ? 'animate__fadeInLeft' : 'animate__fadeInRight'}>
+                    {/* <AnimationOnScroll animateIn={index % 2 !== 0 ? 'animate__fadeInLeft' : 'animate__fadeInRight'}> */}
+
+                    <AnimationOnScroll animateIn="animate__fadeInRight">
                       <div className="Roadmap-item">
                         <div className="Roadmap-item-title">
                           <span className="bebas-neue-font">{item.title}</span>
@@ -50,15 +52,13 @@ const Roadmap = () => {
                       </div>
                     </AnimationOnScroll>
                   </Col>
-
-                  <Col span={12} />
                 </Row>
               ))}
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -23,7 +23,7 @@ const GetApp = () => {
   }, []);
 
   return (
-    <div className="GetApp">
+    <section className="GetApp" id="getApp">
       <div className="GetApp-bg">
         <img src={BgGetApp} alt="" />
       </div>
@@ -54,7 +54,7 @@ const GetApp = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

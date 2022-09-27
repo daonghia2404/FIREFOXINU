@@ -15,7 +15,7 @@ const Tokenomics = () => {
   });
 
   return (
-    <div className="Tokenomics" ref={ref}>
+    <section className="Tokenomics" ref={ref} id="tokenomics">
       <div className="container">
         <div className={classNames('Tokenomics-bg', { active: inView })}>
           <Particles id="TokenomicsParticles" color={EIconColor.AZURE_RADIANCE} />
@@ -31,6 +31,28 @@ const Tokenomics = () => {
           </div>
 
           <div className="Tokenomics-body">
+            <div className="Tokenomics-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Tokenomics distribution</th>
+                    <th>Events</th>
+                    <th>Airdrop</th>
+                    <th> Add liquidity to Pancakeswap</th>
+                    <th>Burn FFS</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Allocation</td>
+                    <td>10%</td>
+                    <td>10%</td>
+                    <td>30%</td>
+                    <td>50%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
             <AnimationOnScroll animateIn="animate__rotateIn">
               <div className="Tokenomics-chart">
                 <img src={ImageTokenomicsChart} alt="" />
@@ -39,7 +61,7 @@ const Tokenomics = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

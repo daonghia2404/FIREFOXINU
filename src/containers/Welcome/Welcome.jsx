@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import Parallax from 'parallax-js';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 
+import Logo from '@/assets/images/logo.svg';
 import BgWelcome from '@/assets/images/bg-welcome.png';
 import ImageWelcome from '@/assets/images/image-welcome-person.png';
 import ImageWelcomeBall from '@/assets/images/image-welcome-ball.png';
@@ -24,7 +25,7 @@ const Welcome = () => {
   }, []);
 
   return (
-    <div className="Welcome">
+    <section className="Welcome" id="welcome">
       <div className="Welcome-bg">
         <img src={BgWelcome} alt="" />
       </div>
@@ -32,22 +33,26 @@ const Welcome = () => {
         <div className="Welcome-wrapper flex items-center justify-between flex-wrap">
           <div className="Welcome-wrapper-item">
             <AnimationOnScroll animateIn="animate__slideInLeft">
-              <div className="Welcome-title bebas-neue-font">
-                <span className="bebas-neue-font">WELCOME</span>
-                <br />
-                be more than a fan
+              <div className="Welcome-logo flex items-center">
+                <img src={Logo} alt="" />
+                <span className="bebas-neue-font">
+                  FIREFOX
+                  <br />
+                  SPORT
+                </span>
               </div>
+            </AnimationOnScroll>
+            <AnimationOnScroll animateIn="animate__slideInLeft">
+              <div className="Welcome-title bebas-neue-font">be more than a fan</div>
             </AnimationOnScroll>
 
             <AnimationOnScroll animateIn="animate__slideInLeft">
               <div className="Welcome-description">
-                FIREFOXINU is the only World Cup mascot, launched to serve the global community of football fans. A new
-                crypto-currency has been created by football fans. FIREFOXINU holders enjoy these benefits: FIREFOXINU
-                token holders will automatically receive 5% of each transaction, The main purpose of Laeeb Inu is to
-                build a community of football fans and a betting platform on mobile applications. For each betting
-                transaction on the Laeeb app platform, $FFI token holders receive 5% without participating in staking.
-                FIREFOXINU goal is to become the largest decentralised football betting platform on the binance smart
-                chain.
+                FIREFOX SPORT is the only World Cup mascot, launched to serve the global community of football fans. A
+                new crypto-currency has been created by football fans. FIREFOX SPORT holders enjoy these benefits:
+                <br />
+                FIREFOX SPORT token holders will automatically receive 5% of each transaction, The main purpose of
+                FIREFOX SPORT is to build a community of football fans and a betting platform on mobile applications.
               </div>
             </AnimationOnScroll>
 
@@ -75,7 +80,7 @@ const Welcome = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

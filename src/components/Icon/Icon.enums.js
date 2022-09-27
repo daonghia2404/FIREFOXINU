@@ -10,4 +10,5 @@ export const EIconColor = {
   AQUA_ISLAND: '#97C5D9',
   CHAMBRAY: '#425F93',
   AZURE_RADIANCE: '#0088FF',
+  RED_RIBBON: '#D80A3B',
 };

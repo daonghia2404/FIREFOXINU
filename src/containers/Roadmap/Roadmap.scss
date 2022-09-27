@@ -142,72 +142,73 @@
         margin-bottom: 2.4rem;
       }
 
-      &:nth-child(odd) {
-        .Roadmap-item {
-          &-title {
-            text-align: right;
-            margin-left: auto;
+      // &:nth-child(odd) {
+      //   .Roadmap-item {
+      //     &-title {
+      //       text-align: right;
+      //       margin-left: auto;
 
-            &-circle {
-              right: -7.5rem;
-              top: 0;
-              transform: translateX(50%);
+      //       &-circle {
+      //         right: -7.5rem;
+      //         top: 0;
+      //         transform: translateX(50%);
 
-              @media (max-width: 768px) {
-                right: -3rem;
-              }
-            }
+      //         @media (max-width: 768px) {
+      //           right: -3rem;
+      //         }
+      //       }
 
-            &-line {
-              &::before {
-                left: 0;
-                transform: translate(-50%, -50%) rotate(45deg);
-              }
+      //       &-line {
+      //         &::before {
+      //           left: 0;
+      //           transform: translate(-50%, -50%) rotate(45deg);
+      //         }
 
-              &::after {
-                left: 100%;
-                transform-origin: left;
-                transform: rotate(-45deg);
-              }
+      //         &::after {
+      //           left: 100%;
+      //           transform-origin: left;
+      //           transform: rotate(-45deg);
+      //         }
+      //       }
+      //     }
+
+      //     &-list {
+      //       text-align: right;
+      //     }
+      //   }
+      // }
+
+      // &:nth-child(even) {
+      // flex-direction: row-reverse;
+
+      .Roadmap-item {
+        &-title {
+          &-circle {
+            left: -7.5rem;
+            top: 0;
+            transform: translateX(-50%);
+
+            @media (max-width: 768px) {
+              left: -3rem;
             }
           }
 
-          &-list {
-            text-align: right;
+          &-line {
+            &::before {
+              right: 0;
+              transform: translate(50%, -50%) rotate(45deg);
+            }
+
+            &::after {
+              right: 100%;
+              transform-origin: right;
+              transform: rotate(45deg);
+            }
           }
         }
       }
 
-      &:nth-child(even) {
-        flex-direction: row-reverse;
-
-        .Roadmap-item {
-          &-title {
-            &-circle {
-              left: -7.5rem;
-              top: 0;
-              transform: translateX(-50%);
-
-              @media (max-width: 768px) {
-                left: -3rem;
-              }
-            }
-
-            &-line {
-              &::before {
-                right: 0;
-                transform: translate(50%, -50%) rotate(45deg);
-              }
-
-              &::after {
-                right: 100%;
-                transform-origin: right;
-                transform: rotate(45deg);
-              }
-            }
-          }
-        }
-      }
+      // }
     }
   }
 }

@@ -3,8 +3,12 @@
 .Navigation {
   position: sticky;
   top: 0;
-  background: $tangaroa;
   z-index: 4;
+
+  @media (max-width: 991px) {
+    background: $tangaroa !important;
+    margin-right: 0 !important; 
+  }
 
   &-overlay {
     @include fullAbsolute;
@@ -56,8 +60,9 @@
     font-size: 2.5rem;
     color: $white;
     text-transform: uppercase;
-    margin: 0 2.8rem;
+    margin: 0 1.6rem;
     transition: $common-transition;
+    white-space: nowrap;
 
     @media (max-width: 991px) {
       font-size: 3.2rem;
@@ -72,6 +77,7 @@
 
       &:hover {
         opacity: 0.7;
+        color: $white;
       }
     }
   }

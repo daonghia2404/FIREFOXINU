@@ -6,7 +6,7 @@ import './Partners.scss';
 
 const Partners = () => {
   return (
-    <div className="Partners">
+    <section className="Partners" id="partner">
       <div className="container">
         <div className="Partners-wrapper">
           <div className="Partners-header">
@@ -25,7 +25,7 @@ const Partners = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

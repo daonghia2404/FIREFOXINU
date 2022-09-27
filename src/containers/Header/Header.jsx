@@ -1,22 +1,24 @@
 import React from 'react';
 
 import Logo from '@/assets/images/logo.svg';
-import Carousels from '@/components/Carousels';
 import Icon, { EIconColor, EIconName } from '@/components/Icon';
+import Navigation from '@/containers/Navigation';
 
-import { dataCountryFlags } from './Header.data';
 import './Header.scss';
 
-const Header = ({ onClickMenu }) => {
+const Header = ({ visibleMenu, onClickOverlay, onClickMenu }) => {
   return (
     <div className="Header">
       <div className="container">
         <div className="Header-wrapper flex items-center justify-between">
           <div className="Header-logo bebas-neue-font">
             <img src={Logo} alt="" />
-            FIREFOXINU
+            FIREFOX SPORT
           </div>
-          <div className="Header-flags">
+
+          <Navigation visible={visibleMenu} onClickOverlay={onClickOverlay} />
+
+          {/* <div className="Header-flags">
             <Carousels
               dots={false}
               arrows
@@ -39,10 +41,10 @@ const Header = ({ onClickMenu }) => {
                 </div>
               ))}
             </Carousels>
-          </div>
+          </div> */}
 
           <div className="Header-menu" onClick={onClickMenu}>
-            <Icon name={EIconName.Menu} color={EIconColor.AZURE_RADIANCE} />
+            <Icon name={EIconName.Menu} color={EIconColor.RED_RIBBON} />
           </div>
         </div>
       </div>

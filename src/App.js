@@ -15,8 +15,12 @@ const App = () => {
 
   return (
     <>
-      <Header onClickMenu={() => setVisibleMenu(true)} />
-      <Navigation visible={visibleMenu} onClickOverlay={() => setVisibleMenu(false)} />
+      <Header
+        visibleMenu={visibleMenu}
+        onClickOverlay={() => setVisibleMenu(false)}
+        onClickMenu={() => setVisibleMenu(true)}
+      />
+      {/* <Navigation visible={visibleMenu} onClickOverlay={() => setVisibleMenu(false)} /> */}
       <div className="App">
         <ParallaxProvider>
           <Router primary={false}>

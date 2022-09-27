@@ -7,7 +7,7 @@ import { EIconColor } from '@/components/Icon';
 
 import './Particles.scss';
 
-const ParticlesAnimation = ({ id = 'tsparticles', color }) => {
+const ParticlesAnimation = React.memo(({ id = 'tsparticles', color }) => {
   const particlesInit = async (main) => {
     await loadFull(main);
   };
@@ -99,6 +99,6 @@ const ParticlesAnimation = ({ id = 'tsparticles', color }) => {
       }}
     />
   );
-};
+});
 
 export default ParticlesAnimation;

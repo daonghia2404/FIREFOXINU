@@ -4,6 +4,7 @@
   padding: 8rem 0;
   position: relative;
   overflow: hidden;
+  background: $daintree;
 
   &-bg {
     display: none;
@@ -17,11 +18,18 @@
     margin-bottom: 4rem;
   }
 
+  &-subtitle {
+    color: $aqua;
+    font-size: 6.4rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
   &-title {
     text-align: center;
     text-transform: uppercase;
-    color: $dodger-blue;
-    font-size: 6.4rem;
+    font-size: 9.6rem;
+    color: $white;
   }
 
   &-description {
@@ -32,32 +40,38 @@
     color: $dodger-blue;
   }
 
-  &-body {
-    position: relative;
-    padding: 4rem 0;
-    background: $chambray;
+  &-list {
+    &-item {
+      @include centerScaleImage;
+      border-radius: 50%;
+      overflow: hidden;
+      cursor: pointer;
+
+      &:hover {
+        img {
+          filter: grayscale(0);
+        }
+      }
+
+      img {
+        transition: $common-transition;
+        filter: grayscale(1);
+      }
+    }
   }
 
-  &-item {
-    text-align: center;
-
-    &-avatar {
-      width: 23rem;
-      height: 23rem;
-      overflow: hidden;
-      border-radius: 50%;
-      @include centerScaleImage;
-      margin: 0 auto 0.4rem;
-    }
-
-    &-name {
-      font-size: 2.8rem;
+  &-detail {
+    &-title {
+      font-size: 16.4rem;
       color: $white;
-      margin-bottom: 0.4rem;
+      text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.3);
+      line-height: 0.9;
+      margin-bottom: 2.4rem;
     }
 
-    &-job {
-      font-size: 4.2rem;
+    &-description {
+      line-height: 0.9;
+      font-size: 8.2rem;
       color: $aqua;
     }
   }

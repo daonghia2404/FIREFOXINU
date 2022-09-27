@@ -17,6 +17,7 @@ const Navigation = ({ visible, onClickOverlay }) => {
                 className={classNames('Navigation-item bebas-neue-font', { button: item.isButton })}
                 key={item.key}
                 href={item.link}
+                onClick={onClickOverlay}
               >
                 {item.title}
               </a>

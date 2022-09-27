@@ -7,7 +7,7 @@ import './HowItWorks.scss';
 
 const HowItWorks = () => {
   return (
-    <div className="HowItWorks">
+    <section className="HowItWorks" id="howItWorks">
       <div className="HowItWorks-wrapper">
         <div className="HowItWorks-header">
           <AnimationOnScroll animateIn="animate__slideInDown">
@@ -41,7 +41,7 @@ const HowItWorks = () => {
           </Row>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

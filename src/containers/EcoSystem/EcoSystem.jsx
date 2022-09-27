@@ -7,16 +7,16 @@ import './EcoSystem.scss';
 
 const EcoSystem = () => {
   return (
-    <div className="EcoSystem">
+    <section className="EcoSystem" id="ecosystem">
       <div className="container">
         <div className="EcoSystem-wrapper">
           <div className="EcoSystem-header">
             <AnimationOnScroll animateIn="animate__slideInDown">
-              <div className="EcoSystem-title bebas-neue-font">50+ EcoSystem AND COUNTING</div>
+              <div className="EcoSystem-title bebas-neue-font">FIREFOX SPORT ECOSYSTEM</div>
             </AnimationOnScroll>
             <AnimationOnScroll animateIn="animate__slideInDown">
               <div className="EcoSystem-description">
-                Laeeb App is a completely decentralized football betting phone application on the Binance chain.
+                FireFox Sport App is a completely decentralized football betting phone application on the Binance chain.
               </div>
             </AnimationOnScroll>
           </div>
@@ -42,7 +42,7 @@ const EcoSystem = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
