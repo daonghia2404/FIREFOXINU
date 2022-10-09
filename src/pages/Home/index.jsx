@@ -11,6 +11,7 @@ import Footer from '@/containers/Footer';
 import Roadmap from '@/containers/Roadmap';
 import Welcome from '@/containers/Welcome';
 import FirefoxSportBacker from '@/containers/FirefoxSportBacker';
+import Investors from '@/containers/Investors';
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <Welcome />
       <WatchVideo />
       <FirefoxSportBacker />
+      <Investors />
       <Partners />
       <EcoSystem />
       <HowItWorks />

@@ -9,7 +9,7 @@ export const dataHowItWorks = [
   {
     key: 1,
     title: 'Download',
-    description: 'Search for FFI.net on your Android or iOS app store',
+    description: 'Search for FFS app on your Android or iOS app store.',
     image: ImageHowItWorks1,
   },
   {
@@ -21,20 +21,20 @@ export const dataHowItWorks = [
   {
     key: 3,
     title: 'FFI App',
-    description: 'Decentralized football betting platform',
+    description: 'Decentralized football exchange platform.',
     image: ImageHowItWorks3,
   },
   {
     key: 4,
-    title: 'Bet on World Cup',
-    description: 'Betting on Champion and get bonus x10 times',
+    title: 'FAN tokens on World Cup',
+    description: 'Exchange on Champion and get bonus x10 times.',
     image: ImageHowItWorks4,
   },
   {
     key: 5,
     title: 'Special Features',
     description:
-      'For each betting transaction on theFFI app platform, $FFI token holders receive 5% without participating in staking.',
+      'For each exchange transaction on the FFS app platform, $FFS token holders receive 5% without participating in staking.',
     image: ImageHowItWorks5,
   },
   {

@@ -69,10 +69,18 @@
       margin-bottom: 2.4rem;
     }
 
-    &-description {
+    &-subtitle {
       line-height: 0.9;
       font-size: 8.2rem;
       color: $aqua;
+      margin-bottom: 6.4rem;
+    }
+
+    &-description {
+      font-size: 2.4rem;
+      font-weight: 500;
+      line-height: 1.3;
+      color: $white;
     }
   }
 }

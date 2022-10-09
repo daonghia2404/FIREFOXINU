@@ -53,25 +53,29 @@
   }
 
   &-logo {
-    margin-bottom: 2.4rem;
+    margin-bottom: 0.8rem;
 
     span {
-      font-size: 9rem;
-      color: $red-ribbon;
-      line-height: 0.9;
+      color: $white;
+      font-size: 8rem;
+      line-height: 0.8;
+
+      span {
+        color: $red-ribbon;
+      }
     }
 
     img {
-      flex: 0 0 14.4rem;
-      max-width: 14.4rem;
-      height: 14.4rem;
+      flex: 0 0 14rem;
+      max-width: 14rem;
+      height: 14rem;
       margin-right: 2.4rem;
     }
   }
 
 
   &-title {
-    font-size: 9.6rem;
+    font-size: 4rem;
     color: $white;
     line-height: 1;
     text-transform: uppercase;
@@ -87,28 +91,26 @@
   }
 
   &-description {
-    font-size: 2.4rem;
+    font-size: 2rem;
+    max-width: 90.5rem;
     color: $white;
     margin-bottom: 2.4rem;
+
+    @media (max-width: 991px) {
+      max-width: 100%;
+    }
   }
 
   &-btns {
-    column-gap: 3rem;
-
-    @media (max-width: 575px) {
-      flex-direction: column;
-      row-gap: 3rem;
-      align-items: center;
-    }
+    margin-bottom: 2.4rem;
   }
 
   &-btn {
     width: fit-content;
     display: block;
-    margin-top: 1.6rem;
     border-radius: 4.4rem;
-    padding: 1.8rem 5.5rem 1.2rem;
-    font-size: 3.2rem;
+    padding: 1.2rem 4.6rem;
+    font-size: 2.8rem;
     font-weight: 600;
     cursor: pointer;
     transition: $common-transition;
@@ -118,11 +120,19 @@
       color: $white !important;
     }
 
-    &:last-child {
-      background: transparent;
-      border: 3px solid $white;
-      color: $white !important;
+    &-icon {
+      flex: 0 0 3.2rem;
+      max-width: 3.2rem;
+      margin-right: 1.2rem;
+      @include centerScaleImage;
     }
+
+
+    // &:last-child {
+    //   background: transparent;
+    //   border: 3px solid $white;
+    //   color: $white !important;
+    // }
 
     &:hover {
       opacity: 0.7;
@@ -152,6 +162,73 @@
 
     img {
       width: 100%;
+    }
+  }
+
+  &-total {
+    max-width: 59rem;
+    background: rgba($black, 0.8);
+    border: 2px solid $white;
+    padding: 1.6rem 4.6rem;
+    border-radius: 2.5rem;
+    margin-bottom: 2.2rem;
+
+    @media (max-width: 991px) {
+      margin: 0 auto 2.2rem;
+    }
+
+    &-icon {
+      flex: 0 0 4.2rem;
+      max-width: 4.2rem;
+      margin-right: 4.8rem;
+      height: 6.2rem;
+
+      .Icon {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &-info {
+      &-title {
+        font-size: 2rem;
+        font-weight: 600;
+        color: $white;
+        line-height: 1.5;
+      }
+
+      &-description {
+        color: $white;
+        font-size: 4.8rem;
+        font-weight: 700;
+        line-height: 1;
+      }
+    }
+  }
+
+  &-download {
+    max-width: 59rem;
+
+    @media (max-width: 991px) {
+      margin: 0 auto;
+    }
+
+    &-title {
+      font-size: 2rem;
+      font-weight: 600;
+      color: $white;
+      margin-bottom: 1rem;
+    }
+
+    .Welcome-btn {
+      padding: 1rem 2rem;
+      width: 100%;
+      height: 6.6rem;
+      justify-content: center;
+
+      span {
+        line-height: 1;
+      }
     }
   }
 }

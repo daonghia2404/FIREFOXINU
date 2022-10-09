@@ -4,6 +4,7 @@
   position: relative;
   overflow: hidden;
   padding: 6.4rem 0 0;
+  background: $daintree;
 
   &-bg {
     display: none;
@@ -36,10 +37,6 @@
     max-width: 104.8rem;
     margin: 0 auto;
     @include centerScaleImage;
-
-    img {
-      transform: translateX(10%);
-    }
   }
 
   &-table {
@@ -57,7 +54,7 @@
       font-size: 2.4rem;
       text-align: center;
       background: $gallery;
-      width: calc(100% / 5);
+      width: calc(100% / 6);
 
       @media (max-width: 991px) {
         width: unset;
@@ -66,6 +63,7 @@
 
     th {
       padding: 1.2rem 3rem;
+      color: $white;
     }
 
     td {
@@ -75,23 +73,27 @@
     thead {
       th {
         &:nth-child(1) {
-          background: #339DFF;
+          background: #797979;
         }
 
         &:nth-child(2) {
-          background: #FFEF5B;
+          background: #293A96;
         }
 
         &:nth-child(3) {
-          background: #16EE52;
+          background: #252463;
         }
 
         &:nth-child(4) {
-          background: #E24F4F;
+          background: #85DAFF;
         }
 
         &:nth-child(5) {
-          background: #85DAFF;
+          background: #5862AD;
+        }
+
+        &:nth-child(6) {
+          background: #4358A7;
         }
       }
     }

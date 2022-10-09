@@ -7,6 +7,7 @@ import './Icon.scss';
 import AngleLeft from './AngleLeft';
 import AngleRight from './AngleRight';
 import Menu from './Menu';
+import User from './User';
 
 const Icon = ({ name, className, color, onClick }) => {
   const renderIcon = () => {
@@ -17,6 +18,8 @@ const Icon = ({ name, className, color, onClick }) => {
         return <AngleRight color={color} />;
       case EIconName.Menu:
         return <Menu color={color} />;
+      case EIconName.User:
+        return <User color={color} />;
 
       default:
         return <></>;

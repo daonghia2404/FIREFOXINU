@@ -68,7 +68,10 @@ const Teams = () => {
                     <h3 className="Teams-detail-title bebas-neue-font">{currentTeam?.name}</h3>
                   </AnimationOnScroll>
                   <AnimationOnScroll animateIn="animate__slideInRight">
-                    <h4 className="Teams-detail-description bebas-neue-font">{currentTeam?.job}</h4>
+                    <h4 className="Teams-detail-subtitle bebas-neue-font">{currentTeam?.job}</h4>
+                  </AnimationOnScroll>
+                  <AnimationOnScroll animateIn="animate__slideInRight">
+                    <p className="Teams-detail-description">{currentTeam?.description}</p>
                   </AnimationOnScroll>
                 </div>
               </Col>

@@ -6,8 +6,13 @@ import Logo from '@/assets/images/logo.svg';
 import BgWelcome from '@/assets/images/bg-welcome.png';
 import ImageWelcome from '@/assets/images/image-welcome-person.png';
 import ImageWelcomeBall from '@/assets/images/image-welcome-ball.png';
+import LogoApple from '@/assets/images/logo-apple.png';
+import LogoAndroid from '@/assets/images/logo-android.png';
+import LogoWindow from '@/assets/images/logo-window.png';
 
 import './Welcome.scss';
+import Icon, { EIconColor, EIconName } from '@/components/Icon';
+import { Col, Row } from 'antd';
 
 const Welcome = () => {
   const configBackground = () => {
@@ -38,32 +43,75 @@ const Welcome = () => {
                 <span className="bebas-neue-font">
                   FIREFOX
                   <br />
-                  SPORT
+                  <span className="bebas-neue-font">SPORT</span>
                 </span>
               </div>
             </AnimationOnScroll>
             <AnimationOnScroll animateIn="animate__slideInLeft">
-              <div className="Welcome-title bebas-neue-font">be more than a fan</div>
+              <div className="Welcome-title bebas-neue-font">
+                <span className="bebas-neue-font">Sport and trade on</span> Your way
+              </div>
             </AnimationOnScroll>
 
             <AnimationOnScroll animateIn="animate__slideInLeft">
               <div className="Welcome-description">
-                FIREFOX SPORT is the only World Cup mascot, launched to serve the global community of football fans. A
-                new crypto-currency has been created by football fans. FIREFOX SPORT holders enjoy these benefits:
-                <br />
-                FIREFOX SPORT token holders will automatically receive 5% of each transaction, The main purpose of
-                FIREFOX SPORT is to build a community of football fans and a betting platform on mobile applications.
+                FFS is a 2.0 decentralized exchange for global sports fans. FFS is a completely transparent platform for
+                sports tournaments around the world, in which the World Cup is the first tournament to apply this DAO
+                Protocol. With a vision to become a global sports trading hub, the FFS ecosystem includes both FanCub
+                and Socialfi. The platform is aimed at users who are passionate about sports.
               </div>
             </AnimationOnScroll>
 
             <AnimationOnScroll animateIn="animate__fadeInUp">
               <div className="Welcome-btns flex">
                 <a href="#" className="Welcome-btn">
-                  GET THE APP
+                  Our Project
                 </a>
-                <a href="#" className="Welcome-btn">
-                  BUY ON PANCAKE
-                </a>
+              </div>
+            </AnimationOnScroll>
+            <AnimationOnScroll animateIn="animate__fadeInUp">
+              <div className="Welcome-total flex items-center">
+                <div className="Welcome-total-icon">
+                  <Icon name={EIconName.User} color={EIconColor.WHITE} />
+                </div>
+                <div className="Welcome-total-info">
+                  <div className="Welcome-total-info-title">Total players</div>
+                  <div className="Welcome-total-info-description">12,712,906</div>
+                </div>
+              </div>
+            </AnimationOnScroll>
+
+            <AnimationOnScroll animateIn="animate__fadeInUp">
+              <div className="Welcome-download">
+                <div className="Welcome-download-title text-center">Download now for free</div>
+                <Row gutter={[24, 24]}>
+                  <Col span={8}>
+                    <a href="#" className="Welcome-btn flex items-center">
+                      <span className="Welcome-btn-icon">
+                        <img src={LogoApple} alt="" />
+                      </span>
+                      <span className="bebas-neue-font" style={{ marginTop: '.4rem' }}>
+                        IOS
+                      </span>
+                    </a>
+                  </Col>
+                  <Col span={8}>
+                    <a href="#" className="Welcome-btn flex items-center">
+                      <span className="Welcome-btn-icon">
+                        <img src={LogoAndroid} alt="" />
+                      </span>
+                      <span className="bebas-neue-font">ANDROID</span>
+                    </a>
+                  </Col>
+                  <Col span={8}>
+                    <a href="#" className="Welcome-btn flex items-center">
+                      <span className="Welcome-btn-icon">
+                        <img src={LogoWindow} alt="" />
+                      </span>
+                      <span className="bebas-neue-font">LAUNCHER</span>
+                    </a>
+                  </Col>
+                </Row>
               </div>
             </AnimationOnScroll>
           </div>

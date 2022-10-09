@@ -5,9 +5,9 @@ import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { Col, Row } from 'antd';
 
 import Logo from '@/assets/images/logo.svg';
-import IconApple from '@/assets/icons/icon-apple.svg';
-import IconCloudDownload from '@/assets/icons/icon-cloud-download.svg';
-import IconGooglePlay from '@/assets/icons/icon-google-play.svg';
+import LogoApple from '@/assets/images/logo-apple.png';
+import LogoAndroid from '@/assets/images/logo-android.png';
+import LogoWindow from '@/assets/images/logo-window.png';
 
 import Particles from '@/components/Particles';
 import { EIconColor } from '@/components/Icon';
@@ -33,12 +33,49 @@ const Footer = () => {
               <AnimationOnScroll animateIn="animate__fadeInUp">
                 <div className="Footer-logo flex items-center justify-center">
                   <img src={Logo} alt="" />
-                  <span className="bebas-neue-font">FIREFOX SPORT</span>
+                  <span className="bebas-neue-font">
+                    FIREFOX
+                    <span className="bebas-neue-font"> SPORT</span>
+                  </span>
                 </div>
               </AnimationOnScroll>
 
               <div className="Footer-download">
-                <AnimationOnScroll animateIn="animate__fadeInUp" delay={100}>
+                <Row gutter={[24, 24]}>
+                  <Col span={8}>
+                    <AnimationOnScroll animateIn="animate__fadeInUp" delay={100}>
+                      <a href="#" className="Footer-btn flex items-center">
+                        <span className="Footer-btn-icon">
+                          <img src={LogoApple} alt="" />
+                        </span>
+                        <span className="bebas-neue-font" style={{ marginTop: '.4rem' }}>
+                          IOS
+                        </span>
+                      </a>
+                    </AnimationOnScroll>
+                  </Col>
+                  <Col span={8}>
+                    <AnimationOnScroll animateIn="animate__fadeInUp" delay={200}>
+                      <a href="#" className="Footer-btn flex items-center">
+                        <span className="Footer-btn-icon">
+                          <img src={LogoAndroid} alt="" />
+                        </span>
+                        <span className="bebas-neue-font">ANDROID</span>
+                      </a>
+                    </AnimationOnScroll>
+                  </Col>
+                  <Col span={8}>
+                    <AnimationOnScroll animateIn="animate__fadeInUp" delay={300}>
+                      <a href="#" className="Footer-btn flex items-center">
+                        <span className="Footer-btn-icon">
+                          <img src={LogoWindow} alt="" />
+                        </span>
+                        <span className="bebas-neue-font">LAUNCHER</span>
+                      </a>
+                    </AnimationOnScroll>
+                  </Col>
+                </Row>
+                {/* <AnimationOnScroll animateIn="animate__fadeInUp" delay={100}>
                   <div className="Footer-download-btn flex items-center">
                     <div className="Footer-download-btn-icon">
                       <img src={IconApple} alt="" />
@@ -62,7 +99,7 @@ const Footer = () => {
                     </div>
                     <span className="bebas-neue-font">DOWNLOAD APK</span>
                   </div>
-                </AnimationOnScroll>
+                </AnimationOnScroll> */}
               </div>
             </Col>
 
