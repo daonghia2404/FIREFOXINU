@@ -20,8 +20,8 @@ export const dataRoadMap = [
     title: 'Q4.2022 - PHASE 3',
     list: [
       '- Fair launch on Pinksale',
-      '- Release FFS token',
-      '- Stake FFS token',
+      '- Release FFE token',
+      '- Stake FFE token',
       '- Release blockchain game: Instant Win Lottery, Daily lottery         ',
       '- Connect with more big partners',
       '- Tournament features',

@@ -13,9 +13,9 @@ export const dataFooterMenu = [
 ];
 
 export const dataFooterSocials = [
-  { title: 'Youtube', link: '#', icon: IconYoutube },
-  { title: 'Twitter', link: '#', icon: IconTwitter },
-  { title: 'Telegram', link: '#', icon: IconTelegram },
-  { title: 'CoinGecko', link: '#', icon: IconDinosaur },
-  { title: 'Coinmarketcap', link: '#', icon: IconM },
+  { title: 'Youtube', link: 'https://www.youtube.com/channel/UCK8axYmeWwrXjOMKqSDkpyw', icon: IconYoutube },
+  { title: 'Twitter', link: 'https://twitter.com/firefoxesport', icon: IconTwitter },
+  { title: 'Telegram', link: 'https://t.me/FFEinsights', icon: IconTelegram },
+  { title: 'CoinGecko', link: 'https://www.coingecko.com/', icon: IconDinosaur },
+  { title: 'Coinmarketcap', link: 'https://coinmarketcap.com/', icon: IconM },
 ];

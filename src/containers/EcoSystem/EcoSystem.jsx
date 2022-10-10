@@ -12,11 +12,12 @@ const EcoSystem = () => {
         <div className="EcoSystem-wrapper">
           <div className="EcoSystem-header">
             <AnimationOnScroll animateIn="animate__slideInDown">
-              <div className="EcoSystem-title bebas-neue-font">FIREFOX SPORT ECOSYSTEM</div>
+              <div className="EcoSystem-title bebas-neue-font">FIREFOX ESPORT ECOSYSTEM</div>
             </AnimationOnScroll>
             <AnimationOnScroll animateIn="animate__slideInDown">
               <div className="EcoSystem-description">
-                FireFox Sport App is a completely decentralized football betting phone application on the Binance chain.
+                Firefox ESport App is a completely decentralized football betting phone application on the Binance
+                chain.
               </div>
             </AnimationOnScroll>
           </div>

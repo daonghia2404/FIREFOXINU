@@ -26,7 +26,7 @@ const Tokenomics = () => {
               <div className="Tokenomics-title bebas-neue-font">Tokenomics Distribution</div>
             </AnimationOnScroll>
             <AnimationOnScroll animateIn="animate__slideInDown">
-              <div className="Tokenomics-description">The FFS Token is a Bep-20 token on Binance Smart Chain</div>
+              <div className="Tokenomics-description">The FFE Token is a Bep-20 token on Binance Smart Chain</div>
             </AnimationOnScroll>
           </div>
 

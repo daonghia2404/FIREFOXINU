@@ -9,7 +9,7 @@ export const dataHowItWorks = [
   {
     key: 1,
     title: 'Download',
-    description: 'Search for FFS app on your Android or iOS app store.',
+    description: 'Search for FFE app on your Android or iOS app store.',
     image: ImageHowItWorks1,
   },
   {
@@ -20,7 +20,7 @@ export const dataHowItWorks = [
   },
   {
     key: 3,
-    title: 'FFS App',
+    title: 'FFE App',
     description: 'Decentralized football exchange platform.',
     image: ImageHowItWorks3,
   },
@@ -34,7 +34,7 @@ export const dataHowItWorks = [
     key: 5,
     title: 'Special Features',
     description:
-      'For each exchange transaction on the FFS app platform, $FFS token holders receive 5% without participating in staking.',
+      'For each exchange transaction on the FFE app platform, $FFE token holders receive 5% without participating in staking.',
     image: ImageHowItWorks5,
   },
   {

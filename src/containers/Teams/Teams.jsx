@@ -30,7 +30,7 @@ const Teams = () => {
         <div className="Teams-wrapper">
           <div className="Teams-header">
             <AnimationOnScroll animateIn="animate__slideInDown">
-              <div className="Teams-subtitle bebas-neue-font">FFS TEAM</div>
+              <div className="Teams-subtitle bebas-neue-font">FFE TEAM</div>
             </AnimationOnScroll>
             <AnimationOnScroll animateIn="animate__slideInDown">
               <div className="Teams-title bebas-neue-font">Executive Steering Committee</div>

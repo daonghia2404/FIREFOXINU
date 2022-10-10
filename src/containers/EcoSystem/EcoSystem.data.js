@@ -6,25 +6,25 @@ import ImageEcosystem4 from '@/assets/images/image-ecosystem-4.png';
 export const dataEcoSystem = [
   {
     key: 1,
-    title: 'Firefox Sport bet on football',
+    title: 'Firefox ESport bet on football',
     description: 'The best decentralized non-football betting platform on binance chain',
     image: ImageEcosystem1,
   },
   {
     key: 2,
-    title: 'Firefox Sport NFT',
-    description: 'FireFox Sport NFT collection',
+    title: 'Firefox ESport NFT',
+    description: 'Firefox ESport NFT collection',
     image: ImageEcosystem2,
   },
   {
     key: 3,
-    title: 'Firefox Sport SWAP',
-    description: 'FireFox Sport swap decentralized exchange',
+    title: 'Firefox ESport SWAP',
+    description: 'Firefox ESport swap decentralized exchange',
     image: ImageEcosystem3,
   },
   {
     key: 4,
-    title: 'Firefox Sport Wallet',
+    title: 'Firefox ESport Wallet',
     description: 'Decentralized crypto wallet that allows user to manage accounts',
     image: ImageEcosystem4,
   },

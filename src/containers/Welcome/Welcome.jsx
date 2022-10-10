@@ -55,9 +55,9 @@ const Welcome = () => {
 
             <AnimationOnScroll animateIn="animate__slideInLeft">
               <div className="Welcome-description">
-                FFS is a 2.0 decentralized exchange for global sports fans. FFS is a completely transparent platform for
+                FFE is a 2.0 decentralized exchange for global sports fans. FFE is a completely transparent platform for
                 sports tournaments around the world, in which the World Cup is the first tournament to apply this DAO
-                Protocol. With a vision to become a global sports trading hub, the FFS ecosystem includes both FanCub
+                Protocol. With a vision to become a global sports trading hub, the FFE ecosystem includes both FanCub
                 and Socialfi. The platform is aimed at users who are passionate about sports.
               </div>
             </AnimationOnScroll>

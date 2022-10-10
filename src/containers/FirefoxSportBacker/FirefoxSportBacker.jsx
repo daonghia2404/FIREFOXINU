@@ -11,7 +11,7 @@ const FirefoxSportBacker = () => {
         <div className="FirefoxSportBacker-wrapper">
           <div className="FirefoxSportBacker-header">
             <AnimationOnScroll animateIn="animate__slideInDown">
-              <div className="FirefoxSportBacker-title bebas-neue-font">FIREFOX SPORT BACKER</div>
+              <div className="FirefoxSportBacker-title bebas-neue-font">FIREFOX ESPORT BACKER</div>
             </AnimationOnScroll>
           </div>
           <div className="FirefoxSportBacker-images flex flex-wrap items-center justify-center">

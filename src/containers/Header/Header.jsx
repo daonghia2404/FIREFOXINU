@@ -13,7 +13,7 @@ const Header = ({ visibleMenu, onClickOverlay, onClickMenu }) => {
         <div className="Header-wrapper flex items-center justify-between">
           <div className="Header-logo bebas-neue-font">
             <img src={Logo} alt="" />
-            FIREFOX SPORT
+            FIREFOX ESPORT
           </div>
 
           <Navigation visible={visibleMenu} onClickOverlay={onClickOverlay} />
