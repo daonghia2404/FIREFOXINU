@@ -107,7 +107,7 @@ const Footer = () => {
               <h5 className="Footer-title bebas-neue-font">EXPLORE</h5>
               <div className="Footer-socials">
                 {dataFooterMenu.map((item, index) => (
-                  <a key={index} className="Footer-socials-item flex items-center" href={item.link} target="_blank">
+                  <a key={index} className="Footer-socials-item flex items-center" href={item.link}>
                     <span>{item.title}</span>
                   </a>
                 ))}

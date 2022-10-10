@@ -5,11 +5,11 @@ import IconYoutube from '@/assets/icons/icon-youtube.svg';
 import IconDinosaur from '@/assets/icons/icon-dinosaur.svg';
 
 export const dataFooterMenu = [
-  { title: 'Home', link: '#home' },
-  { title: 'About', link: '#about' },
+  { title: 'Home', link: '#' },
+  { title: 'About', link: '#ecosystem' },
   { title: 'Roadmap', link: '#roadmap' },
-  { title: 'Team', link: '#team' },
-  { title: 'Contact Us', link: '#contact' },
+  { title: 'Team', link: '#teams' },
+  { title: 'Contact Us', link: '#footer' },
 ];
 
 export const dataFooterSocials = [
