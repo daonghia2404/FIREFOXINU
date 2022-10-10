@@ -20,7 +20,7 @@ export const dataHowItWorks = [
   },
   {
     key: 3,
-    title: 'FFI App',
+    title: 'FFS App',
     description: 'Decentralized football exchange platform.',
     image: ImageHowItWorks3,
   },

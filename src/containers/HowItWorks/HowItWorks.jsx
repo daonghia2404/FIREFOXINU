@@ -15,7 +15,7 @@ const HowItWorks = () => {
           </AnimationOnScroll>
           <AnimationOnScroll animateIn="animate__slideInDown">
             <div className="HowItWorks-description">
-              FFI.net is the all-in-one app that rewards fans. Influence, play, win and trade Fan Tokens, starting
+              FFS.net is the all-in-one app that rewards fans. Influence, play, win and trade Fan Tokens, starting
               today!
             </div>
           </AnimationOnScroll>
