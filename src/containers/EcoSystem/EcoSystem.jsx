@@ -16,8 +16,7 @@ const EcoSystem = () => {
             </AnimationOnScroll>
             <AnimationOnScroll animateIn="animate__slideInDown">
               <div className="EcoSystem-description">
-                Firefox ESport App is a completely decentralized football betting phone application on the Binance
-                chain.
+                Firefox ESport App is a completely decentralized football bet phone application on the Binance chain.
               </div>
             </AnimationOnScroll>
           </div>

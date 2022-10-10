@@ -35,7 +35,7 @@ const Footer = () => {
                   <img src={Logo} alt="" />
                   <span className="bebas-neue-font">
                     FIREFOX
-                    <span className="bebas-neue-font"> SPORT</span>
+                    <span className="bebas-neue-font"> ESPORT</span>
                   </span>
                 </div>
               </AnimationOnScroll>

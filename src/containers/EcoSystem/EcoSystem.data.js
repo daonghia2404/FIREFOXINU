@@ -7,7 +7,7 @@ export const dataEcoSystem = [
   {
     key: 1,
     title: 'Firefox ESport bet on football',
-    description: 'The best decentralized non-football betting platform on binance chain',
+    description: 'The best decentralized non-football bet platform on binance chain',
     image: ImageEcosystem1,
   },
   {

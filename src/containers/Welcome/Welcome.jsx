@@ -43,13 +43,13 @@ const Welcome = () => {
                 <span className="bebas-neue-font">
                   FIREFOX
                   <br />
-                  <span className="bebas-neue-font">SPORT</span>
+                  <span className="bebas-neue-font">ESPORT</span>
                 </span>
               </div>
             </AnimationOnScroll>
             <AnimationOnScroll animateIn="animate__slideInLeft">
               <div className="Welcome-title bebas-neue-font">
-                <span className="bebas-neue-font">Sport and trade on</span> Your way
+                <span className="bebas-neue-font">ESport and trade </span> on Your way
               </div>
             </AnimationOnScroll>
 
@@ -64,7 +64,7 @@ const Welcome = () => {
 
             <AnimationOnScroll animateIn="animate__fadeInUp">
               <div className="Welcome-btns flex">
-                <a href="#" className="Welcome-btn">
+                <a href="/FFE_WWP.pdf" className="Welcome-btn" target="_blank">
                   Our Project
                 </a>
               </div>
