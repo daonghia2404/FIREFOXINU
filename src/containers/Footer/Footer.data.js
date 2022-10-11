@@ -13,8 +13,8 @@ export const dataFooterMenu = [
 ];
 
 export const dataFooterSocials = [
-  { title: 'Youtube', link: 'https://www.youtube.com/channel/UCK8axYmeWwrXjOMKqSDkpyw', icon: IconYoutube },
-  { title: 'Twitter', link: 'https://twitter.com/firefoxesport', icon: IconTwitter },
+  { title: 'Youtube', link: 'https://www.youtube.com/channel/UC5Jk7g7tfT4GJqKAAaV7XiA', icon: IconYoutube },
+  { title: 'Twitter', link: 'https://twitter.com/FirefoxEsport', icon: IconTwitter },
   { title: 'Telegram', link: 'https://t.me/FFEinsights', icon: IconTelegram },
   { title: 'CoinGecko', link: 'https://www.coingecko.com/', icon: IconDinosaur },
   { title: 'Coinmarketcap', link: 'https://coinmarketcap.com/', icon: IconM },
